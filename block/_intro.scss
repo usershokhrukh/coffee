@@ -1,0 +1,52 @@
+.intro__wrapper {
+  padding: 4px;
+}
+
+.intro {
+  background-image: url(../images/greatbgimg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // background-size: contain;
+  border-radius: 10px;
+  background-position: center bottom;
+  background-attachment: fixed;
+
+  &__div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;  
+  }
+
+  &__title {
+  width: 40%;
+
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  /* or 100% */
+
+  color: #FEFCF7;
+  
+  }
+
+  &__text {
+
+  width: 33%;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  color: #FEFCF7;
+
+  opacity: 0.8;
+  }
+  
+
+}
+

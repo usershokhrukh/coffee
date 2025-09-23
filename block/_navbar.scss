@@ -1,7 +1,47 @@
-.card {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  
-}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__logo__title {
+    width: 203px;
+    font-weight: 900;
+    font-family: 'Fraunces';
+    font-size: 20px;
+    color: #333D4B;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  &__link {
+  height: 15px;
+  transition: all 1s ease;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+
+  color: #83888F;
+
+  &:hover {
+    color: black;
+    transform: scale(1.2);
+  }
+  }
+
+}
