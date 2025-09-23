@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "AGAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,GAAG;CAEtB",
+    "sources": [
+        "../style.scss",
+        "../block/_block.scss",
+        "../block/_general.scss",
+        "../block/_navbar.scss",
+        "../block/_intro.scss",
+        "../block/_collection.scss",
+        "../block/_choose.scss",
+        "../block/_works.scss",
+        "../block/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
