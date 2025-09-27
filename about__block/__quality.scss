@@ -1,0 +1,55 @@
+  .quality {
+    position: relative;
+    height: 474px;
+    display: flex;
+    gap :125px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #2C343E;
+
+    &__img {
+      position: relative;
+      top: -100px;
+      border-radius: 10px;
+    }
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+    }
+
+    &__title {
+
+      height: 48px;
+
+
+      font-family: 'Fraunces';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 48px;
+      /* identical to box height, or 120% */
+
+      color: #FEFCF7;
+
+
+    }
+
+    &__text {
+
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      color: #FEFCF7;
+
+      mix-blend-mode: normal;
+      opacity: 0.8;
+
+    }
+  }
