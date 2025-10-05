@@ -1,34 +1,43 @@
+
 .collection {
   position: relative;
-  padding: 262px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
 
   &__main-title {
-    position: absolute;
-    top: 170px;
-    left: 0px;
-    z-index: -1;
-    width: 100%;
+    // position: relative;
+    // background-color: red;
+    // width: 375px;
+    position: relative;
+    font-size: 600%;
+    bottom:  -50px;
     text-align: center;
     font-family: 'Fraunces';
     font-weight: 900;
-    font-size: 800%;
     letter-spacing: 10px;
     background: #000;
     background: linear-gradient(180deg,rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+
   }
 
   &__cards {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     text-align: center;
     justify-content: center;
+    align-items: center;
   }
 
   &__items {
-    width: 300px;
+    width: 255px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -64,10 +73,110 @@
     }
   }
 
+  &__items-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
   &__img {
     position: relative;
     top: 6px;
     bottom: 46px;
   }
 
+}
+
+@media only screen and (max-width: 700px) {
+  .collection {
+    &__wrapper {
+      padding: 0px;
+    }
+    &__main-title {
+      position: relative;
+      top: 10px;
+
+      width: auto;
+      font-size: 200%;
+      letter-spacing: 0px;
+    }
+
+    &__items {
+      width: 282px;
+    }
+
+    .items__title {
+      width: 255px;
+      height: 32px;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+      text-align: center;
+    }
+
+    .items__text {
+      width: 282px;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+      text-align: center;
+
+      color: #333D4B;
+    }
+  }
+}
+
+
+
+
+@media only screen and (min-width: 701px) and (max-width: 1100px) {
+  .collection {
+    &__wrapper {
+      padding: 144px 40px;
+    }
+
+    &__contain {
+      padding: 0px;
+    }
+
+    &__main-title {
+      position: relative;
+      top: 10px;
+      width: auto;
+      font-size: 500%;
+      letter-spacing: 0px;
+
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      
+    }
+
+    &__items {
+      width: 553px;
+      flex-direction: row;
+    }
+
+    .items__title {
+      width: 245px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .items__text {
+      width: 272px;
+      font-size: 15px;
+      line-height: 25px;
+      /* or 167% */
+
+      color: #333D4B;
+
+
+    }
+  }
 }

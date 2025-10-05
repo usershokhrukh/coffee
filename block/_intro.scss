@@ -1,15 +1,13 @@
-.intro__wrapper {
-  padding: 4px;
-}
+
 
 .intro {
   background-image: url(../images/greatbgimg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  // background-size: contain;
   border-radius: 10px;
-  background-position: center bottom;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover ;
+  height: 600px;
+  display: flex;
+  align-items: center;
 
   &__div {
     display: flex;
@@ -50,3 +48,77 @@
 
 }
 
+@media only screen and (max-width: 700px) {
+  .contain {
+    padding: 100px 1% 100px 1%;
+  }
+
+  .intro {
+    &__wrapper {
+      padding: 32px 20px;
+    }
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+    justify-content: center;
+    &__div {
+      align-items: center;
+
+    }
+
+    &__title {
+      width: 279px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 40px;
+
+    }
+
+    &__text {
+      width: 279px;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+  }
+
+
+
+
+  
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1100px) {
+  .intro {
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    &__wrapper {
+      padding: 0px 40px;
+    }
+    &__div {
+      align-items: start;
+    }
+
+    &__title {
+    height: 97px;
+    width: 329px;
+
+    font-family: 'Fraunces';
+    font-size: 48px;
+    line-height: 48px;
+    }
+
+    &__text {
+    width: 398px;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    }
+    
+  }
+
+  .contain {
+    padding: 104px 90px 90px 58px;
+  }
+}
