@@ -1,13 +1,24 @@
 .navbar {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__left {
     display: flex;
     align-items: center;
     gap: 8px;
   }
+
 
   &__logo__title {
     width: 203px;
@@ -17,18 +28,48 @@
     color: #333D4B;
   }
 
-  &__right {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  &__list {
+  
+  &__list, &__bottom-list{
     display: flex;
     align-items: center;
     gap: 32px;
+    transition: all 0s linear;
   }
-  
+
+
+  &__drop {
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    transform: translateY(-5px);
+    visibility: hidden;
+    background-color: rgb(228, 226, 226);
+    border-radius: 3px;
+    padding: 4px 7px;
+    
+  }
+
+  &__burger button {
+    position: absolute;
+    left: -300px;
+    width: 320px;
+    height: 60px;
+    opacity: 0;
+  }
+
+  &__bottom-link:hover {
+    opacity: 0.5;
+
+  }
+
+  &__burger button:focus + &__drop {
+    visibility: visible;
+    transition: all 0.1s linear;
+    transform: translateY(5px);
+    
+  }
+
   &__link {
   height: 15px;
   transition: all 1s ease;
@@ -40,29 +81,36 @@
   /* identical to box height, or 125% */
   letter-spacing: 0.923077px;
   text-transform: uppercase;
-
+  
   color: #83888F;
-
+  
   &:hover {
     color: black;
     transform: scale(1.2);
   }
-  }
+}
 
-  &__burger {
-    display: none;
-    flex-direction: column;
-    align-items: start;
-    gap: 3px;
-  }
-  &__burger-items {
-    width: 15px;
-    height: 1px;
-    background-color: black;
-    border-radius: 10px;
-  }
+&__burger {
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 3px;
+}
+&__burger-items {
+  width: 15px;
+  height: 1px;
+  background-color: black;
+  border-radius: 10px;
+}
 
-  
+&__right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
 
   
 
@@ -80,6 +128,8 @@
       &__burger {
         display: flex;
       }
+
+
     }
   }
 
