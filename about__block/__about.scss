@@ -1,9 +1,9 @@
 .about__intro {
   background-image: url(../images/aboutbgimg.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  // background-position: top bottom;
+  background-repeat: repeat-y ;
+  background-size: cover;
+  // background-attachment: fixed;
+  background-position: right top;
   border-radius: 10px;
 }
 

@@ -5,14 +5,12 @@
   padding: 168px 80px;
 
   &__title {
-    height: 32px;
-
-
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
+    text-align: center;
     /* identical to box height, or 133% */
 
     color: #83888F;
@@ -20,6 +18,7 @@
 
   &__cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 95px;
   }
 
@@ -31,7 +30,6 @@
 
   .items__title {
     padding: 15px 0px 0px 0px;
-    height: 36px;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 900;
@@ -56,4 +54,23 @@
 
   }
   
+}
+
+
+@media only screen and (max-width: 700px) {
+  .headquarters {
+    padding: 0px;
+    align-items: center;
+
+
+    &__cards {
+      align-items: center;
+    }
+
+    &__items {
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
 }
